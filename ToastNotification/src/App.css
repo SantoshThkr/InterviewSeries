@@ -1,0 +1,45 @@
+.toast-message-conatiner{
+  position: fixed;
+  top: 1rem;
+  right: .5rem;
+}
+.toast-message{
+  padding: 1rem;
+  border-radius: .5rem;
+  width: 15rem;
+  position: relative;
+  animation: myAnimation 1s;
+  margin: 1rem;
+
+  span{
+    position: absolute;
+    right: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+}
+.success{
+  background-color: green;
+  color: white;
+}
+.info{
+  background-color: rgb(10, 54, 142);
+  color: white;
+}
+.warning{
+  background-color: rgb(199, 101, 9);
+  color: white;
+}
+.error{
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+
+@keyframes myAnimation {
+  100%{
+    transform: translateX(0%);
+  }
+  0%{
+    transform: translateX(100%);
+  }
+}
